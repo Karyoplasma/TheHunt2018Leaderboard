@@ -82,7 +82,6 @@ public class SpreadsheetReader extends Observable{
     public static Credential authorize() throws IOException {
         // Load client secrets.
     	File creds = new File("resources/client_secret.json");
-    	System.out.println(creds.getAbsolutePath());
         InputStream in = new FileInputStream("resources/client_secret.json");
         GoogleClientSecrets clientSecrets =
             GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
@@ -170,6 +169,7 @@ public class SpreadsheetReader extends Observable{
 			// TODO Auto-generated catch block (never gonna do this)
 			e.printStackTrace();
 		}
+    	//This should only happen if something goes awry (aka something triggers above exception). Could move the return to the catch block but not gonna.
 		return null;
     }
 }

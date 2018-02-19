@@ -256,9 +256,13 @@ public class TheHunt2018Leaderboard implements Observer, ActionListener {
 	 * Put a timestamp in the text field on the bottom
 	 */
 	private void setTimestamp() {
+		//get local time
 		DateFormat f = DateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.MEDIUM, Locale.getDefault());
+		//format it
 		String formattedDate = f.format(new Date());
+		//split it up so because I wanted to put time of day before day of year
 		String[] dateSplit = formattedDate.split(" ");
+		//fancy --- separator
 		textField_update.setText(String.format("%s --- %s", dateSplit[1], dateSplit[0]));
 	}
 	

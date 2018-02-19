@@ -7,8 +7,12 @@ package core;
  */
 public enum Spreadsheet {
 	//define the sheets, enum name is not relevant and is never used anywhere
-	Sheet1("1k7QESQ0MpQtxMza_xQvDlXfURxcGXQD4uLaNQVfF01w", "D1:EW1", "D160:EW160"),
-	Sheet2("1QsjZSLLEXfmpcw1CR3vUX0HCWtLKN05xwLUVH4kie34", "D1:EW1", "D160:EW160");
+	Sheet1("1wJzqmO-O3LS-xHBxomOegZ1IVpB-VJa85frdoNOE2l4", "D1:EW1", "D160:EW160"),
+	Sheet2("1iiegLvVbG3YxDAJym6IPBYPkEJ_nsH8l7WX6xoqY6Ig", "D1:EW1", "D160:EW160"),
+	Sheet3("1vucL8W7FrsJbTG1VpJ4P0jDvYp4q4vMZHJ-H7H-lppw", "D1:EU1", "D160:EU160"),
+	Sheet4("1ZQxGOgho8y4GZQQ70Ub6WoqenfRLEAgIfWnUNbEj0jE", "D1:EX1", "D160:EX160"),
+	Sheet5("1e0ScWuYTCbmDaLZE7xhAqSmBNyFclt9FQlFYVjMiIrw", "D1:EW1", "D160:EW160"),
+	Sheet6("1c11bvY5btj87ZRRFCp-qgxfZ5uTN9B0196eqWyTRV80", "D1:FP1", "D160:FP160");
 
 	private String sheetID, nameRange, dataRange;
 	

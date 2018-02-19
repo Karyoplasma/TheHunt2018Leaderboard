@@ -52,12 +52,12 @@ public class Participant implements Comparable<Participant>{
 				return 1;
 			}
 		}
-		// they have the same amount of points, so they are the same (that sounds more awful than intended)
+		// they have the same amount of points, so they are the same rank
 		return 0;
 	}
 	
 	/* 
-	 * A String respresentation of this class (not needed anywhere, but left in for kicks)
+	 * A String representation of this class (not needed anywhere, but left in for kicks)
 	 */
 	@Override
 	

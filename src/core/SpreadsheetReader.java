@@ -158,7 +158,12 @@ public class SpreadsheetReader extends Observable{
     			 // fill the PriorityQueue with the participants
     			 int index = 0;
     			 for (Object n : namesList) {
-    				 Participant p = new Participant(n.toString(), Integer.parseInt(pointsList.get(index).toString()));
+    				 Participant p;
+    				 if (pointsList.get(index).toString().equals("#ERROR!")) {
+    					 p = new Participant(n.toString(), 0);
+    				 } else {
+    					 p = new Participant(n.toString(), Integer.parseInt(pointsList.get(index).toString()));
+    				 }
     				 index++;
     				 participantData.add(p);
     			 }
